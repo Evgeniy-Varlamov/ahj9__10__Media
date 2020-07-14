@@ -10,7 +10,7 @@ export default class GeoLocation {
   getGeo() {
     return new Promise((resolve, reject) => {
       if (!navigator.geolocation) {
-        this.err = 'Геолокакия не поддерживается в Вашем браузере :(';
+        this.err = 'Геолокация не поддерживается в Вашем браузере :(';
         this.status = false;
         reject();
       } else {
