@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 800px;
+  margin: 50px auto;
+}
+
+#controll {
+  position: relative;
+}
+
+#input {
+  height: 40px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid gray;
+  outline: 0;
+  padding: 0 100px 0 30px;
+}
+
+.btn-block {
+  display: flex;
+  width: 65px;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  top: 5px; right: 10px;
+}
+
+#buttons-stop-rec {
+  width: 120px;
+  align-items: center;
+}
+
+#timer {
+  display: block;
+}
+
+.hidden {
+  display: none;
+ }
+
+.av {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fefefe;
+  background-size: 20px;;
+}
+
+#audio-start-btn {
+  background-image: url('../img/phone.png');
+}
+#video-start-btn {
+  background-image: url('../img/video.png');
+}
+
+#ok-btn {
+  background-image: url('../img/ok.png');
+}
+#cancel-btn {
+  background-image: url('../img/cancel.png');
+}
+
+.mini-video {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.popup {
+  position: absolute;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 450px;
+  padding: 10px;
+  top: 20px;
+  left: 20px;
+  background-color: gray;
+}
+
+.popup-inp {
+  width: 100%;
+}
+
+.popup-buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+#messages-list {
+  padding-left: 80px;
+}
+
+.msg {
+  display: block;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.msg::before {
+  content: '';
+  width: 15px;
+  height: 100%;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  position: absolute;
+  left: -43px;
+  top: 35px;
+}
+
+.msg::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 30px;
+  position: absolute;
+  left: -50px;
+  top: 10px;
+  background-color: white;
+}
+
+.msg__content-block {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: top;
+}
+
+video {
+  width: 300px;
+  height: 300px;
+}
+
+.msg__geo {
+  padding-top: 10px;
+}
+
+
+
+
